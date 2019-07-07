@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/urlInput"
+        android:layout_width="263dp"
+        android:layout_height="60dp"
+        android:hint="Enter a url here.."
+        android:text="https://stocksnap.io/"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <Button
+        android:id="@+id/fetch"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="fetch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/urlInput"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <GridLayout
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="@+id/progressText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/urlInput"
+        app:layout_editor_absoluteX="300dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="Image_Select1"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="Image_Select2"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="115dp"
+            android:layout_height="97dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:onClick="Image_Select3"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:onClick="Image_Select4"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="Image_Select5"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="Image_Select6"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="411dp"
+            android:onClick="Image_Select7"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:onClick="Image_Select8"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:onClick="Image_Select9"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:onClick="Image_Select10"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:onClick="Image_Select11"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="2"
+            android:layout_column="3"
+            tools:layout_editor_absoluteX="7dp"
+            tools:layout_editor_absoluteY="305dp"
+            android:onClick="Image_Select12"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            tools:layout_editor_absoluteX="320dp"
+            tools:layout_editor_absoluteY="208dp"
+            android:onClick="Image_Select13"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            tools:layout_editor_absoluteX="213dp"
+            tools:layout_editor_absoluteY="208dp"
+            android:onClick="Image_Select14"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            tools:layout_editor_absoluteX="115dp"
+            tools:layout_editor_absoluteY="191dp"
+            android:onClick="Image_Select15"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="3"
+            android:layout_column="3"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="314dp"
+            android:onClick="Image_Select16"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="4"
+            android:layout_column="0"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="314dp"
+            android:onClick="Image_Select17"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="314dp"
+            android:onClick="Image_Select18"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:onClick="Image_Select19"
+            android:visibility="visible"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="100dp"
+            android:layout_height="95dp"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:onClick="Image_Select20"
+            android:visibility="visible"
+            tools:srcCompat="@tools:sample/avatars" />
+    </GridLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="282dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urlInput"
+        app:layout_constraintVertical_bias="0.896" />
+
+    <TextView
+        android:id="@+id/progressText"
+        android:layout_width="272dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.333" />
+</androidx.constraintlayout.widget.ConstraintLayout>

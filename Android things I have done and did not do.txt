@@ -1,0 +1,8 @@
+Things I have done:
+Integrating activity 1 and activity 2 together
+	setting the intent
+Activity 1 to display after downloaded images
+Mapping the URL images to activity 2 after selection from activity 1
+
+Things I have not done:
+base codes of activity 1 and 2
